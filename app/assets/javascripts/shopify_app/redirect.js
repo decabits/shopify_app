@@ -18,7 +18,11 @@
       // App Bridge redirect. This case can happen when an app updates its access scopes,
       // or the unlikely scenario where the shop thinks the app is installed, but the
       // app does not have an record for the shop.
+
       window.appBridgeRedirect(targetInfo.url);
+
+      //Patch from Sahil for admin.shopify.com
+      window.location.href = targetInfo.url;
     }
   }
 
