@@ -8,6 +8,8 @@
   <%= javascript_include_tag('shopify_app/post_redirect', crossorigin: 'anonymous', integrity: true) %>
 </head>
 <body>
-  <%= form_tag '/auth/shopify', id: 'redirect-form' %>
+  <%= form_tag('/auth/shopify', id: 'redirect-form') do %>
+    <%= submit_tag 'Click to Continue with App' %>
+  <% end %>
 </body>
 </html>
