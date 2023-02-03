@@ -1,9 +1,5 @@
 (function() {
   function redirect() {
-    var form = document.getElementById("redirect-form");
-    if (form) {
-      form.submit();
-    }
     setTimeout(function() {
       var continueApp = document.getElementById("continue-app");
       if (continueApp) {
@@ -11,6 +7,11 @@
         continueApp.style.visibility = null;
       }
     }, 5000)
+
+    var form = document.getElementById("redirect-form");
+    if (form) {
+      form.submit();
+    }
   }
   document.addEventListener("DOMContentLoaded", redirect);
 })();
