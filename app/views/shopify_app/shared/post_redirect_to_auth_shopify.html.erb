@@ -9,7 +9,7 @@
 </head>
 <body>
   <%= form_tag('/auth/shopify', id: 'redirect-form') do %>
-    <%= submit_tag 'Click to Continue with App' %>
+    <%= submit_tag 'Click to Continue with App', id: 'continue-app', style: 'visibility: "hidden"' %>
   <% end %>
 </body>
 </html>
